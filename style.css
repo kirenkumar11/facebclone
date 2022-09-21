@@ -1,0 +1,285 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+}
+
+:root {
+    --bgColor: #e9ebee;
+    --navBg: #3b5998;
+    --colorWhite: #fff;
+    --colorBlack: #000;
+}
+
+body {
+    font-family: sans-serif;
+    font-weight: 400;
+    background: var(--bgColor);
+}
+
+nav#nav {
+    width: 100%;
+    height: 70px;
+    background: var(--navBg);
+    line-height: 70px;
+    padding: 0 180px;
+    display: flex;
+
+}
+
+.left-ul li {
+    list-style: none;
+}
+
+.left-ul li a {
+    color: var(--colorWhite);
+    font-size: 30px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.right-ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.right-ul li {
+    list-style: none;
+}
+
+.empty {
+    margin: 0 auto;
+}
+
+.nav-control {
+    height: 33px;
+    padding: 0 10px;
+    border-radius: 3px;
+    border:0px;
+    margin-right: 10px;
+}
+
+.nav-btn {
+    height: 40px;
+    padding: 0 10px;
+    border-radius: 3px;
+    background: var(--colorWhite);
+    color: var(--colorBlack);
+    border: 0px;
+    cursor: pointer;
+}
+
+.nav-btn-fp {
+    font-weight:bold;
+    height: 40px;
+    padding: 0 10px;
+    border-radius: 3px;
+    background: rgb(235, 63, 0);
+    border: 0px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.container {
+    display: flex;
+    padding: 48px 180px;
+}
+
+.left-section, .right-section {
+    width: 50%;
+}
+
+.right-section {
+    padding-left: 20px;
+}
+
+.left-heading {
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 35px;
+}
+
+.image {
+    margin-top: 25px;
+    margin-left: 90px;
+    overflow: hidden;
+}
+
+.form-heading {
+    font-size: 30px;
+    color: #333;
+}
+
+.text {
+    margin: 10px 0;
+    font-weight: normal;
+    font-size: 17px;
+}
+
+#formSection {
+    width: 100%;
+
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.control {
+    padding: 8px 10px;
+    font-size: 18px;
+    border-radius: 4px;
+    border:1px solid #bdc7d8 ;
+   
+}
+.half:nth-child(2){
+    margin-left: 2%;
+}
+
+.birth {
+    font-size: 17px;
+    letter-spacing: 1px;
+    margin-bottom: 7px;
+}
+
+select {
+    padding: 5px 10px;
+}
+
+#male {
+    margin-left: 6px;
+}
+
+.someText {
+    font-size: 13px;
+    width: 80%;
+    color: #777;
+}
+
+.btn {
+    font-size: 19px;
+    font-weight: bold;
+    min-width: 194px;
+    text-align: center;
+    border-radius: 4px;
+    cursor: pointer;
+    display: inline-block;
+    text-shadow: 0 1px 2px rgba(0,0,0,.5);
+    margin: 10px 0px;
+    padding: 10px 20px;
+    background: linear-gradient(#67ae55,#578843);
+    border: 0;
+    color: var(--colorWhite);
+}
+
+#popupContact {
+	display: none;
+	flex-direction: column;
+	position: absolute;
+	left: 45%;
+	top: 17%;
+	margin-left: -400px;
+}
+
+#card {
+	position: absolute;
+	display: flex;
+	justify-content: flex-start;
+	width: 920px; height : 572px;
+	padding: 108px 0px 0px 18px;
+	flex-direction: column;
+	border: 2px solid gray;
+	font-family: raleway;
+	background-color: #fff;
+	height: 572px;
+}
+
+input[type="text"],[type="password"] {
+	padding: 0px 0px 0px 21px;
+	width: 230px;
+	height: 40px;
+	color: #828282;
+	font-size: 18px;
+	line-height: 25px;
+	font-family: Nunito;
+	font-style: normal;
+	font-weight: normal;
+}
+input[type="email"]{
+    width: 465px;
+    height: 40px ;
+}
+textarea {
+	margin:14px 0px 0px 0px;
+	padding: 12px 0px 0px 20px;
+	width: 884px;
+	height: 232px;
+	font-family: Nunito;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 25px;
+	display: flex;
+	color: #828282;
+}
+
+::placeholder {
+	font-family: Nunito;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 25px;
+	color: #828282;
+}
+
+#update{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    width: 200px;
+    height: 39px;
+    margin: 71px 64px 103px 784px;
+    margin-left: 680px;
+    align-items: center;
+    text-align: center;
+    background: #6C63FF;
+    border-radius: 4px;
+    color: #FFFFFF;
+}
+
+#close {
+	position: absolute;
+	right: -910px;
+	margin: 13px 0px 0px 19px;
+	cursor: pointer;
+	z-index: 9;
+}
+
+#rect {
+	position: absolute;
+	width: 5px;
+	height: 41px;
+	background: #FE9A28;
+	z-index: 9;
+	margin: 41px 0px 0px 18px;
+}
+
+@media(max-width: 765px){
+    nav#nav {
+        flex-direction: column;
+        height: auto;
+        padding: 0 50px;
+    }
+
+    .container {
+        flex-direction: column;
+        padding: 30px 50px;
+    }
+
+    .left-section, .right-section {
+        width: 100%;
+    }
+}
